@@ -28,7 +28,7 @@ data "aws_ami" "amazon-linux-2023" {
   }
 }
 
-resource "aws_instance" "faith" {
+resource "aws_instance" "tfmyec2" {
   ami = data.aws_ami.amazon-linux-2023.id
   instance_type = var.instance_type
   count = var.num_of_instance
